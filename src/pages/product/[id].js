@@ -45,7 +45,7 @@ const Product = ({ product }) => {
           <div className={styles.overview_regular_price}><div className={styles.overview_regular_price_text}>{'฿'+product.regular_price}</div><div className={styles.overview_percent}>{(parseInt((product.regular_price-product.final_price)/product.regular_price*100))+'%'}</div> </div> 
           <div className={styles.overview_qty}>
           <div className={styles.overview_qty_text}>Quantity</div>
-          <div className={styles.overview_value}><InputNumber defaultValue={1}  /></div>
+          <div className={styles.overview_value}><InputNumber defaultValue={1} min={1}  /></div>
           </div>
           </div>
         </div>
